@@ -37,7 +37,7 @@ az network vnet create \
 #Generate ssh keys 
 ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa -N ""
 
-# Read the SSH private key content
+# Read the SSH public key content
 sshPublicKey=$(cat ~/.ssh/id_rsa.pub)
 
 # Store the SSH key as a secret in the Key Vault
