@@ -82,7 +82,7 @@ az role assignment create \
 
 # Schedule Auto-Shutdown
 echo "Scheduling Auto-Shutdown"
-az vm auto-shutdown -g $resourceGroup -n $vmName --time 1900 --email "eqanahmad@gmail.com"
+az vm auto-shutdown -g $resourceGroup -n $vmName --time 1900 --email "username@email.com"
 
 #Restart VM to run startup script.
 az vm restart --resource-group $resourceGroup --name $vmName
